@@ -7,7 +7,7 @@ let radius = 200;
 let squish = 0;
 
 function setup() {
-  createCanvas(1000, 1000, WEBGL); // please change to suit your piece
+  createCanvas(windowWidth, windowHeight, WEBGL); // please change to suit your piece
   colorMode(HSB, 255, 100, 70);
   noStroke();
 }
@@ -17,7 +17,7 @@ function draw() {
   background(0);
 
   rotateY(frameCount * 0.01);
-  rotateX(frameCount * 0.001);
+  rotateX(frameCount * 0.01);
   
   squish = (sin(frameCount * 0.01) + 1);
 
