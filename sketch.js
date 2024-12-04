@@ -7,7 +7,7 @@ let radius = 200;
 let squish = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL); // please change to suit your piece
+  createCanvas(windowWidth, windowHeight, WEBGL); 
   colorMode(HSB, 255, 100, 70);
   noStroke();
 }
@@ -51,12 +51,9 @@ function draw() {
     let y1 = lerp(sy, dy, squish);
     let z1 = lerp(sz, dz, squish);
 
-    // let hueVal = map(i, 0, numPoints, 180, 240);
-    // fill(hueVal, 100, 100);
-
     push();
     translate(x1, y1, z1);
-    let hueVal = map(i, 0, numPoints, 180, 240);
+    let hueVal = map(i, 0, numPoints, 150, 255);
     fill(hueVal, 100, 100);
     sphere(5);
     pop();
@@ -80,7 +77,9 @@ function draw() {
     fill(hueVal, 100, 250);    
     sphere(5);
     pop();
+
   }
+
   numPoints += 3;
   if (numPoints > 1000) {
     numPoints = 1000;
