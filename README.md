@@ -1,18 +1,19 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/EjdKcPEz)
-# Project 03 - Advanced Techniques
+# Dynamic 3D Visualization with Phyllotaxis and Spherical Interpolation Project 
 
 
-In this project I am exploring the phyllotaxis technique. Typically phyllotaxis is usually 2D but I've changed it to 3D to make it more dynamic. I plot points based on angles and radii calculated using the phyllotaxis formula. But instead of keeping them in a flat spiral I use spherical coordinates to form a 3D shape. To make things more interesting I have animated the pattern and have it transitioning between a sphere (which is created using two spirals on either side of the sphere) and a torus using interpolation. This creates a squishing, morphing effect that's driven by a sine wave for smooth, continuous motion. 
+In this project I am showcasing a creative implementation of a 3D visualization inspired by phyllotaxis, the mathematical arrangement of points often seen in nature, such as sunflower seeds. The piece is designed to dynamically transition between spherical and toroidal (donut-shaped) structures, using an interpolation technique. 
 
-I used gradients to map color across the points. The gradient shifts smoothly between hues, emphasizing the spiral and radial design of the structure. I also implemented 3D techniques like rotation, scaling, and perspective transformations to make the piece feel more alive. 
+KEY FEATURES INCLUDED:
+- Smoothly transforms between sphere and torus geometries using the lerp function for a visually compelling morphing effect.
+- Gradual growth in the number of points visualized, capped at 1,000, for controlled complexity.
+- Vibrant HSB color gradients mapped to the geometry for enhanced visual appeal.
+- Uses perspective adjustments based on oscillation to create a more immersive experience.
+- Learned and implemented phyllotaxis for point distribution.
 
 
 REFERENCES:
-
 https://www.youtube.com/watch?v=KWoJgHFYWxY
-
 https://p5js.org/tutorials/lights-camera-materials/
-
 https://www.youtube.com/watch?v=p0uKK2jv_m0
 
 
